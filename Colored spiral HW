@@ -1,0 +1,11 @@
+import turtle
+turtle.Screen().bgcolor("black")
+a = turtle.Turtle()
+turtle.Screen().setup(500,500)
+a.speed=(10)
+colors=["red","blue","green","yellow"]
+for x in range(200):
+    a.pencolor(colors[x % 4]) 
+    a.width(x / 100 + 1) 
+    a.forward(x) 
+    a.left(45) 
